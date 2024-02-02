@@ -1,0 +1,47 @@
+/* Fonts */
+/* @font-face {
+    font-family: 'Raleway';
+    src: url(./local.google.fonts.css);
+} */
+@import url('./local.google.fonts.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+@font-face {
+    font-family: 'JostBold';
+    src: url(../fonts/Jost-Bold.ttf) format('truetype');
+}
+
+
+body{
+    color: #666;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.font_Bold,.anchor_text{
+    font-family: 'JostBold' !important;
+   
+}
+
+.fc-red{
+    color: rgb(208, 66, 44) !important;
+}
+
+/* 分页器css */
+.post-pagination .page-link{
+    color: #666;
+}
+.post-pagination .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: rgb(208, 66, 44) !important;
+    border-color: rgb(208, 66, 44) !important;
+}
+.post-pagination .page-link:focus{
+    box-shadow: 0 0 0 0.25rem rgba(208, 66, 44, 0.25) !important;
+}
+.anchor_text{
+    font-size: 3rem;
+}
+.color_text{
+    color: #343a40;
+}
