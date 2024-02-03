@@ -490,10 +490,10 @@ export default {
       }else if (item.path) {
         this.menuVisible = false
         // 改成重定向并刷新
-        window.location.replace('/caselab/'+item.path)
-        // this.$router.push({
-        //     path: item.path
-        //   });
+        // window.location.replace('/caselab/'+item.path)
+        this.$router.push({
+          path: item.path
+        });
       }else {
         return
       }
