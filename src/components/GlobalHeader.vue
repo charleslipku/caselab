@@ -11,7 +11,7 @@
       "
   >
     <div class="container" style="height: 60px;">
-      <a class="logo mr-3" href="/">
+      <a class="logo mr-3" @click="goToHomePage()">
         <div class="logo-container">
           <img v-if="routerBlack" src="/assets/images/lab_logo.jpg" alt="" style="width: 130px;padding-bottom:10px;">
           <img v-else src="/assets/images/lab_logo.jpg" alt="" style="width: 130px;padding-bottom:10px;">
@@ -497,6 +497,11 @@ export default {
       }else {
         return
       }
+    },
+    goToHomePage() {
+      this.$router.push({
+        path: '/',
+      });
     },
     goToDetailPage(url) {
       window.location.replace(url)
