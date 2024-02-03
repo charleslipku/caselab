@@ -7,6 +7,13 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BButton: typeof import('bootstrap-vue')['BButton']
+    BCol: typeof import('bootstrap-vue')['BCol']
+    BFormSelect: typeof import('bootstrap-vue')['BFormSelect']
+    BPagination: typeof import('bootstrap-vue')['BPagination']
+    BRow: typeof import('bootstrap-vue')['BRow']
+    BTab: typeof import('bootstrap-vue')['BTab']
+    BTabs: typeof import('bootstrap-vue')['BTabs']
     GlobalFooter: typeof import('./src/components/GlobalFooter.vue')['default']
     GlobalHeader: typeof import('./src/components/GlobalHeader.vue')['default']
     Press: typeof import('./src/components/Press.vue')['default']

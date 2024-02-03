@@ -8,7 +8,6 @@ const researchPapers = () => import("../pages/researchPapers.vue");
 const projectOverview = () => import("../pages/projects.vue");
 const contact = () => import("../pages/contact.vue");
 const aboutus = () => import("../pages/aboutus.vue");
-const productOverview = () => import("../pages/productOverview.vue");
 const press = () => import("../pages/press.vue");
 
 Vue.use(Router);
@@ -40,10 +39,6 @@ export const mainRouters = [
   {
     path: "/aboutus",
     component: aboutus,
-  },
-  {
-    path: "/productOverview",
-    component: productOverview,
   },
   {
     path: "/press",

@@ -1,6 +1,6 @@
 import { defineConfig, loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue2";
-import Sitemap from "vite-plugin-sitemap";
+// import Sitemap from "vite-plugin-sitemap";
 import Uvc from "unplugin-vue-components/vite";
 import { BootstrapVueResolver } from "unplugin-vue-components/resolvers";
 import path from "path";
@@ -49,53 +49,16 @@ const config = defineConfig(({ command, mode }) => {
           BootstrapVueResolver()
         ]
       }),
-      Sitemap({
-        hostname: env.VUE_APP_BASE_API,
-        dynamicRoutes: [
-          "/",
-          "/maodina",
-          "/careers",
-          "/careersDetail",
-          "/researchPapers",
-          "/partnerships",
-          "/contact",
-          "/community",
-          "/octopus",
-          "/beehive",
-          "/parrot",
-          "/spider",
-          "/confidentialAI",
-          "/cheetah",
-          "/modelServing",
-          "/modelMonitoring",
-          "/web3",
-          "/sponsorship",
-          "/aboutus",
-          "/productOverview",
-          "/productAIEcosystem",
-          "/press",
-          "/weChat",
-          "/solutionUsecaseSmartCity",
-          "/solutionUsecaseHealthcare",
-          "/solutionUsecaseAdvertisement",
-          "/solutionUsecaseGenerativeAI",
-          "/solutionUsecaseLogisticsRetail",
-          "/solutionUsecaseMobility",
-          "/solutionUsecaseMultiCloud",
-          "/solutionUsecaseWeb3Blockchain",
-          "/solutionUsecaseFinTech",
-          "/solutionModelComputerVision",
-          "/solutionModelNLP",
-          "/solutionModelRecommendation",
-          "/solutionModelGenerativeAI",
-          "/solutionModelGraphNeuralNetworks",
-          "/modelsFedCV",
-          "/modelsFedGraphNN",
-          "/modelsFedIoT",
-          "/modelsFedNlp",
-          "/maodian",
-        ],
-      }),
+      // Sitemap({
+      //   hostname: env.VUE_APP_BASE_API,
+      //   dynamicRoutes: [
+      //     "/",
+      //     "/maodina",
+      //     "/researchPapers",
+      //     "/contact",
+      //     "/press"
+      //   ],
+      // }),
     ],
   };
 });
