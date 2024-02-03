@@ -14,6 +14,7 @@ const config = defineConfig(({ command, mode }) => {
   console.log(command, mode, env);
 
   return {
+    publicDir:"caselab",
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "src"),
