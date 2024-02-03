@@ -47,7 +47,7 @@ export const mainRouters = [
 ]
 
 export default new Router({
-  mode: "history",
+  // mode: "history",
   base:'/caselab/',
   routes: [
     {
